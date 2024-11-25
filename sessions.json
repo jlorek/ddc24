@@ -1,0 +1,642 @@
+[
+    {
+        "id": 1,
+        "day": "Dienstag",
+        "time": "09:00 - 10:00",
+        "title": "Keynote: Nicht mehr das .NET Deiner Kindheit",
+        "speaker": "Christian Giesswein",
+        "location": "Ballsaal A",
+        "description": "German",
+        "selectable": true
+    },
+    {
+        "id": 2,
+        "day": "Dienstag",
+        "time": "10:00 - 10:30",
+        "title": "Kaffeepause @ Text Control",
+        "speaker": "",
+        "location": "Foyer",
+        "description": "",
+        "selectable": false
+    },
+    {
+        "id": 3,
+        "day": "Dienstag",
+        "time": "10:30 - 11:30",
+        "title": "Architekturen testen mit NDepend",
+        "speaker": "David Tielke",
+        "location": "Ballsaal D",
+        "description": "Intermediate German Software Architecture, Testing, and Quality",
+        "selectable": true
+    },
+    {
+        "id": 4,
+        "day": "Dienstag",
+        "time": "10:30 - 11:30",
+        "title": "Verwandeln wir Deine Website in eine hybride .NET MAUI-Anwendung",
+        "speaker": "Mark Allibone",
+        "location": "Ballsaal C",
+        "description": "Intermediate German Frontend Development",
+        "selectable": true
+    },
+    {
+        "id": 5,
+        "day": "Dienstag",
+        "time": "10:30 - 11:30",
+        "title": "AI-driven Software Development mit Azure AI",
+        "speaker": "Jörg Neumann",
+        "location": "Ballsaal A",
+        "description": "Introductory and overview German Artificial Intelligence",
+        "selectable": true
+    },
+    {
+        "id": 6,
+        "day": "Dienstag",
+        "time": "10:30 - 11:30",
+        "title": "Die versteckten EF Core Features",
+        "speaker": "Christian Giesswein",
+        "location": "Ballsaal B",
+        "description": "Introductory and overview German Data & Databases",
+        "selectable": true
+    },
+    {
+        "id": 7,
+        "day": "Dienstag",
+        "time": "11:30 - 11:45",
+        "title": "Raumwechsel",
+        "speaker": "",
+        "location": "",
+        "description": "",
+        "selectable": false
+    },
+    {
+        "id": 8,
+        "day": "Dienstag",
+        "time": "11:45 - 12:45",
+        "title": "Im Notfall Scheibe einschlagen: Strategien zum richtigen Behandeln von Fehlern",
+        "speaker": "Florian Bader",
+        "location": "Raum Wechsel",
+        "description": "Introductory and overview German Software Architecture, Testing, and Quality .NET Languages, Fundamentals, Best Practices Approaches",
+        "selectable": true
+    },
+    {
+        "id": 9,
+        "day": "Dienstag",
+        "time": "11:45 - 12:45",
+        "title": "Migration: WinForms und WPF goes Web",
+        "speaker": "Dr. Veikko Krypczyk",
+        "location": "Raum Wechsel",
+        "description": "Advanced German Frontend Development",
+        "selectable": true
+    },
+    {
+        "id": 10,
+        "day": "Dienstag",
+        "time": "11:45 - 12:45",
+        "title": "Azure OpenAI und Semantic Kernel für Softwareentwickler",
+        "speaker": "Dr. Damir Dobric",
+        "location": "Raum Wechsel",
+        "description": "Advanced German Artificial Intelligence",
+        "selectable": true
+    },
+    {
+        "id": 11,
+        "day": "Dienstag",
+        "time": "11:45 - 12:45",
+        "title": "Deep Dive: Entity Framework Core-Performance",
+        "speaker": "Dr. Holger Schwichtenberg",
+        "location": "Raum Wechsel",
+        "description": "Advanced German Data & Databases",
+        "selectable": true
+    },
+    {
+        "id": 12,
+        "day": "Dienstag",
+        "time": "12:45 - 14:15",
+        "title": "Mittagspause und Besuch der Fachmesse",
+        "speaker": "",
+        "location": "",
+        "description": "",
+        "selectable": false
+    },
+    {
+        "id": 13,
+        "day": "Dienstag",
+        "time": "14:15 - 15:15",
+        "title": "Stop starting with Microservices - Der modulare Monolith in .NET",
+        "speaker": "Florian Lenz",
+        "location": "Raum Wechsel",
+        "description": "German Software Architecture, Testing, and Quality",
+        "selectable": true
+    },
+    {
+        "id": 14,
+        "day": "Dienstag",
+        "time": "14:15 - 15:15",
+        "title": "Another migration: Xamarin.Forms to .NET MAUI",
+        "speaker": "Iris Classon",
+        "location": "Raum Wechsel",
+        "description": "English Frontend Development",
+        "selectable": true
+    },
+    {
+        "id": 15,
+        "day": "Dienstag",
+        "time": "14:15 - 15:15",
+        "title": "DDC-Panel: Mein Kopilot treibt mich in den Wahnsinn",
+        "speaker": "Dr. Damir Dobric, Ina Einemann, Jörg Neumann, Tilman Börner, Julia Kordick",
+        "location": "Raum Wechsel",
+        "description": "German Artificial Intelligence",
+        "selectable": true
+    },
+    {
+        "id": 16,
+        "day": "Dienstag",
+        "time": "14:15 - 15:15",
+        "title": "GraphQL on .NET with steroids!",
+        "speaker": "Mauro Bennici",
+        "location": "Raum Wechsel",
+        "description": "Advanced English Data & Databases",
+        "selectable": true
+    },
+    {
+        "id": 17,
+        "day": "Dienstag",
+        "time": "15:15 - 15:30",
+        "title": "Raumwechsel",
+        "speaker": "",
+        "location": "",
+        "description": "",
+        "selectable": false
+    },
+    {
+        "id": 18,
+        "day": "Dienstag",
+        "time": "15:30 - 16:30",
+        "title": "Taktisches Refactoring von .NET Legacy Code",
+        "speaker": "Gregor Biswanger",
+        "location": "Raum Wechsel",
+        "description": "Advanced German Software Architecture, Testing, and Quality",
+        "selectable": true
+    },
+    {
+        "id": 19,
+        "day": "Dienstag",
+        "time": "15:30 - 16:30",
+        "title": "Enterprise Apps mit Blazor Server & EF Core entwickeln",
+        "speaker": "Thomas Claudius Huber",
+        "location": "Raum Wechsel",
+        "description": "Intermediate German Frontend Development",
+        "selectable": true
+    },
+    {
+        "id": 20,
+        "day": "Dienstag",
+        "time": "15:30 - 16:30",
+        "title": "Big Brother is watching you - Lokales GenAI in Anwendungen",
+        "speaker": "Thomas Tomow",
+        "location": "Raum Wechsel",
+        "description": "Intermediate German Artificial Intelligence",
+        "selectable": true
+    },
+    {
+        "id": 21,
+        "day": "Dienstag",
+        "time": "15:30 - 16:30",
+        "title": "Azure Datenanalyse: Wie Licht ins Dunkel kommt",
+        "speaker": "Florian Bader",
+        "location": "Raum Wechsel",
+        "description": "German Data & Databases",
+        "selectable": true
+    },
+    {
+        "id": 22,
+        "day": "Dienstag",
+        "time": "16:30 - 17:00",
+        "title": "Kaffeepause @ Xebia | Xpirit Germany",
+        "speaker": "",
+        "location": "Foyer",
+        "description": "",
+        "selectable": false
+    },
+    {
+        "id": 23,
+        "day": "Dienstag",
+        "time": "17:00 - 18:00",
+        "title": "Beyond Clean Code: Zeitgemäße Ansätze für hochqualitatives Softwareengineering",
+        "speaker": "Alexander Rampp",
+        "location": "Raum Wechsel",
+        "description": "Introductory and overview German Software Architecture, Testing, and Quality",
+        "selectable": true
+    },
+    {
+        "id": 24,
+        "day": "Dienstag",
+        "time": "17:00 - 18:00",
+        "title": "Webanwendungen und Cross-Platform-Apps mit Blazor – Soll ich's machen oder lass ich's lieber sein?",
+        "speaker": "Dr. Holger Schwichtenberg",
+        "location": "Raum Wechsel",
+        "description": "Introductory and overview German Frontend Development",
+        "selectable": true
+    },
+    {
+        "id": 25,
+        "day": "Dienstag",
+        "time": "17:00 - 18:00",
+        "title": "\"Talk to your systems\": Strukturierte Daten & Tool-Integration - LLM-Anbindung einfach gemacht",
+        "speaker": "Christian Weyer",
+        "location": "Raum Wechsel",
+        "description": "Intermediate German Artificial Intelligence",
+        "selectable": true
+    },
+    {
+        "id": 26,
+        "day": "Dienstag",
+        "time": "17:00 - 18:00",
+        "title": "Visual Studio als Entwicklungstool für SQL Server basierte Datenbanken",
+        "speaker": "Thorsten Kansy",
+        "location": "Raum Wechsel",
+        "description": "Intermediate German Data & Databases",
+        "selectable": true
+    },
+    {
+        "id": 27,
+        "day": "Dienstag",
+        "time": "18:00 - 18:15",
+        "title": "Raumwechsel",
+        "speaker": "",
+        "location": "",
+        "description": "",
+        "selectable": false
+    },
+    {
+        "id": 28,
+        "day": "Dienstag",
+        "time": "18:15 - 19:15",
+        "title": "Wir testen. Aber testen wir auch gut genug?",
+        "speaker": "Patrick Drechsler",
+        "location": "Raum Wechsel",
+        "description": "Intermediate German Software Architecture, Testing, and Quality",
+        "selectable": true
+    },
+    {
+        "id": 29,
+        "day": "Dienstag",
+        "time": "18:15 - 19:15",
+        "title": "Echtes Cross-Plattform mit Blazor, WPF und MAUI – ein Praxisbericht",
+        "speaker": "André Krämer",
+        "location": "Raum Wechsel",
+        "description": "German Frontend Development",
+        "selectable": true
+    },
+    {
+        "id": 30,
+        "day": "Dienstag",
+        "time": "18:15 - 19:15",
+        "title": "Geschüttelt, nicht gerührt: KI-Agenten im Devteam",
+        "speaker": "Alex Netsch, Markus Weiss",
+        "location": "Raum Wechsel",
+        "description": "Advanced German Artificial Intelligence",
+        "selectable": true
+    },
+    {
+        "id": 31,
+        "day": "Dienstag",
+        "time": "18:15 - 19:15",
+        "title": "SQL Server – eine sichere Sache",
+        "speaker": "Thorsten Kansy",
+        "location": "Raum Wechsel",
+        "description": "German Data & Databases",
+        "selectable": true
+    },
+    {
+        "id": 32,
+        "day": "Dienstag",
+        "time": "19:30 - 20:30",
+        "title": "NightSession: AI Ninja Moves: Wie kann ich AI in der Entwicklung konkret nutzen?",
+        "speaker": "Oliver Sturm, Jörg Neumann",
+        "location": "Ballsaal A",
+        "description": "German",
+        "selectable": true
+    },
+    {
+        "id": 33,
+        "day": "Dienstag",
+        "time": "20:30 - 23:00",
+        "title": "Get Together",
+        "speaker": "Session and Speaker Management powered by Sessionize.com",
+        "location": "Foyer",
+        "description": "",
+        "selectable": true
+    },
+    {
+        "id": 34,
+        "day": "Mittwoch",
+        "time": "09:00 - 10:00",
+        "title": "Keynote: How to destroy Happiness at work",
+        "speaker": "Stefan Mintert, Kathleen Janz",
+        "location": "Ballsaal A",
+        "description": "",
+        "selectable": true
+    },
+    {
+        "id": 35,
+        "day": "Mittwoch",
+        "time": "10:00 - 10:30",
+        "title": "Kaffeepause @ Xebia | Xpirit Germany",
+        "speaker": "",
+        "location": "Foyer",
+        "description": "",
+        "selectable": false
+    },
+    {
+        "id": 36,
+        "day": "Mittwoch",
+        "time": "10:30 - 11:30",
+        "title": ".NET 9 - Whatsup? Was gibt es Neues?",
+        "speaker": "Christian Giesswein",
+        "location": "Ballsaal A",
+        "description": "Intermediate German .NET Languages, Fundamentals, Best Practices",
+        "selectable": true
+    },
+    {
+        "id": 37,
+        "day": "Mittwoch",
+        "time": "10:30 - 11:30",
+        "title": "DevOps 3 Ways - Die Philospohie hinter DevOps",
+        "speaker": "Thomas Schissler",
+        "location": "Ballsaal B",
+        "description": "Intermediate German Approaches",
+        "selectable": true
+    },
+    {
+        "id": 38,
+        "day": "Mittwoch",
+        "time": "10:30 - 11:30",
+        "title": "API FOMO: REST, gRPC or GraphQL?",
+        "speaker": "Roland Guijt",
+        "location": "Ballsaal C",
+        "description": "Introductory and overview English Backend Technologies",
+        "selectable": true
+    },
+    {
+        "id": 39,
+        "day": "Mittwoch",
+        "time": "10:30 - 11:30",
+        "title": "Mit ’nem alten Kahn in die Cloud – Eine Fallstudie",
+        "speaker": "Tom Wendel",
+        "location": "Ballsaal D",
+        "description": "German",
+        "selectable": true
+    },
+    {
+        "id": 40,
+        "day": "Mittwoch",
+        "time": "11:45 - 12:45",
+        "title": "Be Sharp with New Features in C#",
+        "speaker": "Roland Guijt",
+        "location": "Raum Wechsel",
+        "description": "Intermediate English .NET Languages, Fundamentals, Best Practices",
+        "selectable": true
+    },
+    {
+        "id": 41,
+        "day": "Mittwoch",
+        "time": "11:45 - 12:45",
+        "title": "Event Storming: Kreativität trifft auf Struktur",
+        "speaker": "Ina Einemann",
+        "location": "Raum Wechsel",
+        "description": "Introductory and overview German Approaches",
+        "selectable": true
+    },
+    {
+        "id": 42,
+        "day": "Mittwoch",
+        "time": "11:45 - 12:45",
+        "title": "Entwicklung von ASP.NET Core Microservices mit Dapr: Eine praktische Anleitung",
+        "speaker": "Marc Müller",
+        "location": "Raum Wechsel",
+        "description": "Advanced German Backend Technologies",
+        "selectable": true
+    },
+    {
+        "id": 43,
+        "day": "Mittwoch",
+        "time": "11:45 - 12:45",
+        "title": "Azure Functions Deep Dive: Building Serverless Solutions for Scalable Applications",
+        "speaker": "Michiel Hamers",
+        "location": "Raum Wechsel",
+        "description": "Advanced English Cloud Development",
+        "selectable": true
+    },
+    {
+        "id": 44,
+        "day": "Mittwoch",
+        "time": "12:45 - 14:15",
+        "title": "Mittagspause und Besuch der Fachmesse",
+        "speaker": "",
+        "location": "",
+        "description": "",
+        "selectable": false
+    },
+    {
+        "id": 45,
+        "day": "Mittwoch",
+        "time": "14:15 - 15:15",
+        "title": "Writing (in)efficient C#",
+        "speaker": "Callum Whyte",
+        "location": "Raum Wechsel",
+        "description": "Intermediate English .NET Languages, Fundamentals, Best Practices",
+        "selectable": true
+    },
+    {
+        "id": 46,
+        "day": "Mittwoch",
+        "time": "14:15 - 15:15",
+        "title": "Breaking Free: Kubernetes Unleashed for Small .NET Teams",
+        "speaker": "Marius Boden",
+        "location": "Raum Wechsel",
+        "description": "Intermediate English Approaches",
+        "selectable": true
+    },
+    {
+        "id": 47,
+        "day": "Mittwoch",
+        "time": "14:15 - 15:15",
+        "title": "Aus der Praxis: ASP.NET Core 8.0 WebAPI",
+        "speaker": "Thorsten Kansy",
+        "location": "Raum Wechsel",
+        "description": "Intermediate German Backend Technologies",
+        "selectable": true
+    },
+    {
+        "id": 48,
+        "day": "Mittwoch",
+        "time": "14:15 - 15:15",
+        "title": "Typsicheres, polyglottes Messaging und Eventing: Stream/Queue/Topic of T",
+        "speaker": "Clemens Vasters",
+        "location": "Raum Wechsel",
+        "description": "German Cloud Development",
+        "selectable": true
+    },
+    {
+        "id": 49,
+        "day": "Mittwoch",
+        "time": "15:15 - 15:30",
+        "title": "Raumwechsel",
+        "speaker": "",
+        "location": "",
+        "description": "",
+        "selectable": false
+    },
+    {
+        "id": 50,
+        "day": "Mittwoch",
+        "time": "15:30 - 16:30",
+        "title": "Say goodbye to IConfiguration and embrace the power of the IOptions pattern",
+        "speaker": "Pieter Samyn",
+        "location": "Raum Wechsel",
+        "description": "Intermediate English .NET Languages, Fundamentals, Best Practices",
+        "selectable": true
+    },
+    {
+        "id": 51,
+        "day": "Mittwoch",
+        "time": "15:30 - 16:30",
+        "title": "Agil, aber richtig: Kundenzentrierung als Erfolgsfaktor für Teams",
+        "speaker": "Miriam Hunger",
+        "location": "Raum Wechsel",
+        "description": "German Approaches",
+        "selectable": true
+    },
+    {
+        "id": 52,
+        "day": "Mittwoch",
+        "time": "15:30 - 16:30",
+        "title": "I followed the Microsoft docs, so my app is secure right?",
+        "speaker": "Bart Lannoeye",
+        "location": "Raum Wechsel",
+        "description": "Advanced English Backend Technologies",
+        "selectable": true
+    },
+    {
+        "id": 53,
+        "day": "Mittwoch",
+        "time": "15:30 - 16:30",
+        "title": "Versioniert, automatisiert und sicher - Optimale Bereitstellung von Azure-Ressourcen",
+        "speaker": "Marc Müller",
+        "location": "Raum Wechsel",
+        "description": "Intermediate German Cloud Development",
+        "selectable": true
+    },
+    {
+        "id": 54,
+        "day": "Mittwoch",
+        "time": "16:30 - 17:00",
+        "title": "Kaffeepause @ Text Control",
+        "speaker": "",
+        "location": "Foyer",
+        "description": "",
+        "selectable": false
+    },
+    {
+        "id": 55,
+        "day": "Mittwoch",
+        "time": "17:00 - 18:00",
+        "title": "From C# to Rust",
+        "speaker": "Sebastian Nilsson",
+        "location": "Raum Wechsel",
+        "description": "Introductory and overview English .NET Languages, Fundamentals, Best Practices",
+        "selectable": true
+    },
+    {
+        "id": 56,
+        "day": "Mittwoch",
+        "time": "17:00 - 18:00",
+        "title": "Pull Requests und Commit-Hygiene: Vom Branching bis zum Conventional Commit",
+        "speaker": "Florian Bader, Felix Burkhard",
+        "location": "Raum Wechsel",
+        "description": "Introductory and overview German Approaches",
+        "selectable": true
+    },
+    {
+        "id": 57,
+        "day": "Mittwoch",
+        "time": "17:00 - 18:00",
+        "title": "To the Core: Migrating to ASP.NET Core Microservices",
+        "speaker": "Iris Classon",
+        "location": "Raum Wechsel",
+        "description": "English Backend Technologies",
+        "selectable": true
+    },
+    {
+        "id": 58,
+        "day": "Mittwoch",
+        "time": "17:00 - 18:00",
+        "title": "Container und WebAssembly:Verteilte Applikationen mit .NET Aspire orchestrieren",
+        "speaker": "Thorsten Hans",
+        "location": "Raum Wechsel",
+        "description": "Intermediate German Cloud Development",
+        "selectable": true
+    },
+    {
+        "id": 59,
+        "day": "Mittwoch",
+        "time": "18:15 - 19:15",
+        "title": "Von Blazor zu WASI: Praktische Einblicke in WebAssembly mit .NET und C#",
+        "speaker": "Oliver Sturm",
+        "location": "Raum Wechsel",
+        "description": "German",
+        "selectable": true
+    },
+    {
+        "id": 60,
+        "day": "Mittwoch",
+        "time": "18:15 - 19:15",
+        "title": "Maximale Effizienz: Automatisierte Releases in einer Multi-Team-Umgebung",
+        "speaker": "Michael Kaufmann",
+        "location": "Raum Wechsel",
+        "description": "Advanced German Software Architecture, Testing, and Quality Approaches Cloud Development",
+        "selectable": true
+    },
+    {
+        "id": 61,
+        "day": "Mittwoch",
+        "time": "18:15 - 19:15",
+        "title": "Containerisierung von .NET Applikationen",
+        "speaker": "Roland König",
+        "location": "Raum Wechsel",
+        "description": "Advanced German Backend Technologies",
+        "selectable": true
+    },
+    {
+        "id": 62,
+        "day": "Mittwoch",
+        "time": "18:15 - 19:15",
+        "title": "Scaling your .NET app with Azure",
+        "speaker": "Callum Whyte",
+        "location": "Raum Wechsel",
+        "description": "Intermediate English Cloud Development",
+        "selectable": true
+    },
+    {
+        "id": 63,
+        "day": "Mittwoch",
+        "time": "19:30 - 20:30",
+        "title": "NightSession: Being a Bad(ass) Developer",
+        "speaker": "Iris Classon",
+        "location": "Ballsaal A",
+        "description": "English Approaches",
+        "selectable": true
+    },
+    {
+        "id": 64,
+        "day": "Mittwoch",
+        "time": "20:30 - 23:00",
+        "title": "Get Together",
+        "speaker": "Session and Speaker Management powered by Sessionize.com",
+        "location": "Foyer",
+        "description": "",
+        "selectable": true
+    }
+]
