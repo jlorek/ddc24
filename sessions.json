@@ -324,10 +324,10 @@
         "day": "Dienstag",
         "time": "20:30 - 23:00",
         "title": "Get Together",
-        "speaker": "Session and Speaker Management powered by Sessionize.com",
+        "speaker": "",
         "location": "Foyer",
         "description": "",
-        "selectable": true
+        "selectable": false
     },
     {
         "id": 34,
@@ -634,9 +634,9 @@
         "day": "Mittwoch",
         "time": "20:30 - 23:00",
         "title": "Get Together",
-        "speaker": "Session and Speaker Management powered by Sessionize.com",
+        "speaker": "",
         "location": "Foyer",
         "description": "",
-        "selectable": true
+        "selectable": false
     }
 ]
