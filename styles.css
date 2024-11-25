@@ -9,6 +9,7 @@ body {
     color: #000000; /* Schwarze Schrift für den weißen Hintergrund */
 }
 
+/* Header Styling */
 header {
     background-color: rgb(199, 83, 154); /* Pinker Hintergrund */
     color: #ffffff; /* Weiße Schrift */
@@ -17,8 +18,10 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leichter Schatten für Tiefe */
 }
 
+/* Navigation Styling */
 nav ul {
     list-style: none;
     padding: 0;
@@ -33,6 +36,7 @@ nav ul li {
 
 nav ul li a {
     color: #ffffff; /* Weiße Schrift */
+    background-color: rgb(199, 83, 154); /* Pinker Hintergrund */
     text-decoration: none;
     font-weight: bold;
     padding: 0.5em 1em;
@@ -44,6 +48,7 @@ nav ul li a:hover {
     background-color: rgb(1, 90, 216); /* Blauer Hintergrund beim Hover */
 }
 
+/* Main Content Styling */
 main {
     display: flex;
     flex-wrap: wrap;
@@ -60,12 +65,29 @@ section {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+/* Überschriften Styling */
 h2 {
     border-bottom: 2px solid rgb(199, 83, 154); /* Pinke Unterstreichung */
     padding-bottom: 0.5em;
     color: rgb(199, 83, 154); /* Pinke Überschrift */
 }
 
+h3 {
+    background-color: rgb(199, 83, 154); /* Pinker Hintergrund */
+    color: #ffffff; /* Weiße Schrift */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h4 {
+    background-color: rgb(1, 90, 216); /* Blauer Hintergrund */
+    color: #ffffff; /* Weiße Schrift */
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+/* Listen Styling */
 ul {
     list-style-type: none;
     padding: 0;
@@ -75,7 +97,7 @@ li {
     margin: 10px 0;
 }
 
-/* Stil für ausgewählte Sessions */
+/* Stil für ausgewählte Sessions in "Mein Plan" */
 #my-plan-section {
     background-color: #ffffff; /* Weißer Hintergrund */
     color: #000000; /* Schwarze Schrift */
@@ -88,6 +110,7 @@ li {
     border-radius: 5px;
 }
 
+/* Button Styling */
 #clear-plan {
     background-color: rgb(1, 90, 216); /* Blauer Button */
     color: #ffffff; /* Weiße Schrift */
@@ -108,24 +131,9 @@ li {
     margin-bottom: 20px;
 }
 
-.day-section h3 {
-    background-color: rgb(199, 83, 154); /* Pinker Hintergrund */
-    color: #ffffff; /* Weiße Schrift */
-    padding: 10px;
-    border-radius: 5px;
-}
-
 .time-section {
     margin-left: 20px;
     margin-top: 10px;
-}
-
-.time-section h4 {
-    background-color: rgb(1, 90, 216); /* Blauer Hintergrund */
-    color: #ffffff; /* Weiße Schrift */
-    padding: 8px;
-    border-radius: 5px;
-    font-size: 1.1em;
 }
 
 .time-section ul li {
@@ -162,6 +170,34 @@ input[type="checkbox"] {
     border-radius: 5px;
 }
 
+/* Footer Styling */
+footer {
+    background-color: rgb(199, 83, 154); /* Pinker Hintergrund, gleiche Farbe wie Header */
+    color: #ffffff; /* Weiße Schrift */
+    padding: 1em 0; /* Gleiche Padding wie im Header */
+    text-align: center; /* Zentrierter Text */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Leichter Schatten nach oben */
+    margin-top: 20px; /* Abstand zum Hauptinhalt */
+    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Optional: feine Linie oben */
+}
+
+/* Stil für "Zurück nach oben" Link im Footer */
+footer .back-to-top {
+    color: #ffffff; /* Weiße Schrift */
+    background-color: rgb(199, 83, 154); /* Pinker Hintergrund, gleiche Farbe wie Footer */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block; /* Sicherstellen, dass der Link korrekt dargestellt wird */
+    margin-top: 10px;
+}
+
+footer .back-to-top:hover {
+    background-color: rgb(1, 90, 216); /* Blauer Hintergrund beim Hover */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     main {
@@ -177,4 +213,7 @@ input[type="checkbox"] {
         flex-direction: column;
         gap: 10px;
     }
+
+    /* Anzeigen des "Zurück nach oben" Links nur auf mobilen Geräten */
+    /* Da der Link jetzt im Footer ist und der Footer selbst sichtbar ist, muss hier nichts weiter angepasst werden */
 }

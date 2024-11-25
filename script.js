@@ -14,6 +14,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     await loadSessions(); // Warten bis Sessions geladen sind
     loadSelectedSessions(); // Jetzt die ausgewählten Sessions laden
     attachClearPlanListener();
+    // Optional: Automatische Aktualisierung jede Minute
+    setInterval(() => {
+        loadSelectedSessions();
+    }, 60000); // Alle 60 Sekunden aktualisieren
 });
 
 // Funktion zum Laden der Sessions aus JSON
@@ -154,47 +158,16 @@ function renderSelectedSessions(selectedIds) {
     // Sortiere die ausgewählten Sessions nach Tag und Zeit
     selectedSessions.sort((a, b) => {
         // Zuerst nach Tag
-        const dayOrder = { "Dienstag": 1, "Mittwoch": 2 };
+        const dayOrder = { "Sonntag": 0, "Montag": 1, "Dienstag": 2, "Mittwoch": 3, "Donnerstag": 4, "Freitag": 5, "Samstag": 6 };
         if (dayOrder[a.day] !== dayOrder[b.day]) {
             return dayOrder[a.day] - dayOrder[b.day];
         }
 
         // Dann nach Zeit
-        const timeA = parseTime(a.time);
-        const timeB = parseTime(b.time);
+        const timeA = parseTime(a.time.split(' - ')[0]);
+        const timeB = parseTime(b.time.split(' - ')[0]);
         return timeA - timeB;
     });
-
-    // Bestimme die aktuelle Zeit und das aktuelle Datum
-    const now = new Date();
-    const currentDay = getCurrentDay(now);
-    const currentTime = now.getHours() * 60 + now.getMinutes();
-
-    // Finde die aktuell laufenden und nächsten Sessions
-    let ongoingSessions = [];
-    let nextSessions = [];
-
-    // Alle Sessions des aktuellen Tages
-    const todaySessions = allSessions.filter(session => session.day === currentDay);
-
-    // Sortiere die Sessions nach Startzeit
-    todaySessions.sort((a, b) => {
-        const aStart = parseTime(a.time);
-        const bStart = parseTime(b.time);
-        return aStart - bStart;
-    });
-
-    // Finde laufende Sessions
-    ongoingSessions = todaySessions.filter(session => {
-        const [start, end] = session.time.split(' - ').map(t => parseTime(t));
-        return currentTime >= start && currentTime < end;
-    });
-
-    // Wenn keine laufenden Sessions, finde die nächste(n) Session(en)
-    if (ongoingSessions.length === 0) {
-        const nextSessionStart = Math.min(...todaySessions.map(session => parseTime(session.time.split(' - ')[0])));
-        nextSessions = todaySessions.filter(session => parseTime(session.time.split(' - ')[0]) === nextSessionStart);
-    }
 
     // Render die ausgewählten Sessions
     selectedSessions.forEach(session => {
@@ -205,15 +178,6 @@ function renderSelectedSessions(selectedIds) {
             ${session.time ? session.time + ', ' : ''}${session.location ? session.location : ''}<br>
             <small>${session.description ? session.description : ''}</small>
         `;
-
-        // Überprüfen, ob die Session aktuell oder die nächste ist
-        const isOngoing = ongoingSessions.some(s => s.id === session.id);
-        const isNext = nextSessions.some(s => s.id === session.id);
-
-        if (isOngoing || isNext) {
-            li.classList.add('current-session');
-        }
-
         selectedSessionsList.appendChild(li);
     });
 
@@ -225,12 +189,6 @@ function parseTime(timeStr) {
     if (!timeStr || timeStr === 'Ungeplante Zeit') return 0;
     const [hours, minutes] = timeStr.split(':').map(Number);
     return hours * 60 + minutes;
-}
-
-// Hilfsfunktion zur Bestimmung des aktuellen Tages auf Deutsch
-function getCurrentDay(date) {
-    const days = ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];
-    return days[date.getDay()];
 }
 
 // Funktion zum Event-Listener für den "Plan löschen" Button
