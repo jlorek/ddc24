@@ -8,7 +8,7 @@
 </head>
 <body>
     <header id="header">
-        <h1>DDC24 planner / made with ♥️ and 🤖</h1>
+        <h1>DDC24 planner</h1>
         <nav>
             <ul>
                 <li><a href="#my-plan-section">Mein Plan</a></li>
@@ -34,9 +34,27 @@
     <footer>
         <!-- "Zurück nach oben" Link -->
         <p><a href="#header" class="back-to-top">Zurück nach oben</a></p>
+        <!-- Neuer Text im Footer -->
+        <p class="footer-text">made with ♥️ and 🤖</p>
     </footer>
 
     <!-- Skript -->
     <script src="script.js"></script>
+
+    <script>
+        // Optional: JavaScript für sanftes Scrollen
+        document.addEventListener('DOMContentLoaded', () => {
+            const backToTopLink = document.querySelector('.back-to-top');
+            if (backToTopLink) {
+                backToTopLink.addEventListener('click', (e) => {
+                    e.preventDefault(); // Verhindert das Standardverhalten des Links
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 </html>

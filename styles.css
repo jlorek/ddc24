@@ -198,6 +198,13 @@ footer .back-to-top:hover {
     background-color: rgb(1, 90, 216); /* Blauer Hintergrund beim Hover */
 }
 
+/* Neuer Stil für den Footer-Text */
+.footer-text {
+    font-size: 0.9em; /* Etwas kleinere Schriftgröße */
+    margin-top: 10px; /* Abstand zum vorherigen Inhalt im Footer */
+    color: #ffffff; /* Weiße Schrift */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     main {
