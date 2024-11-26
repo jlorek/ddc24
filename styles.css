@@ -26,12 +26,9 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0.5em 0 0 0;
-    display: none; /* Standardmäßig ausblenden */
+    display: flex; /* Sichtbar machen */
+    justify-content: center;
     gap: 20px;
-}
-
-nav ul li {
-    display: inline;
 }
 
 nav ul li a {
@@ -170,6 +167,21 @@ input[type="checkbox"] {
     border-radius: 5px;
 }
 
+/* Trennlinie Styling */
+.separator {
+    border: none;
+    border-top: 1px solid #cccccc; /* Hellgraue Linie */
+    margin: 10px 0;
+}
+
+/* Gruppierungstitel Styling */
+.group-title {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: rgb(199, 83, 154); /* Pinke Farbe für Gruppierungstitel */
+}
+
 /* Footer Styling */
 footer {
     background-color: rgb(199, 83, 154); /* Pinker Hintergrund, gleiche Farbe wie Header */
@@ -192,6 +204,7 @@ footer .back-to-top {
     transition: background-color 0.3s;
     display: inline-block; /* Sicherstellen, dass der Link korrekt dargestellt wird */
     margin-top: 10px;
+    cursor: pointer; /* Zeigt einen Mauszeiger an */
 }
 
 footer .back-to-top:hover {
@@ -203,6 +216,11 @@ footer .back-to-top:hover {
     font-size: 0.9em; /* Etwas kleinere Schriftgröße */
     margin-top: 10px; /* Abstand zum vorherigen Inhalt im Footer */
     color: #ffffff; /* Weiße Schrift */
+}
+
+/* Sanfte Scroll-Animation */
+html {
+    scroll-behavior: smooth;
 }
 
 /* Responsive Design */

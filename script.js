@@ -18,6 +18,18 @@ document.addEventListener('DOMContentLoaded', async () => {
     setInterval(() => {
         loadSelectedSessions();
     }, 60000); // Alle 60 Sekunden aktualisieren
+
+    // Scroll-Funktion für "Zurück nach oben" Link
+    const backToTopLink = document.querySelector('.back-to-top');
+    if (backToTopLink) {
+        backToTopLink.addEventListener('click', (e) => {
+            e.preventDefault(); // Verhindert das Standardverhalten des Links
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
 });
 
 // Funktion zum Laden der Sessions aus JSON
@@ -147,7 +159,7 @@ function attachCheckboxListeners() {
     });
 }
 
-// Funktion zum Rendern der ausgewählten Sessions in "Mein Plan" sortiert nach Tag und Zeit
+// Funktion zum Rendern der ausgewählten Sessions in "Mein Plan" sortiert nach Tag und Zeit mit Trennlinien
 function renderSelectedSessions(selectedIds) {
     // Leere die aktuelle Liste
     selectedSessionsList.innerHTML = '';
@@ -169,8 +181,32 @@ function renderSelectedSessions(selectedIds) {
         return timeA - timeB;
     });
 
-    // Render die ausgewählten Sessions
+    let previousDay = '';
+    let previousTime = '';
+
+    // Render die ausgewählten Sessions mit Trennlinien
     selectedSessions.forEach(session => {
+        // Überprüfe, ob Tag oder Zeit sich geändert hat
+        if (session.day !== previousDay || session.time !== previousTime) {
+            // Füge eine Trennlinie hinzu, wenn nicht die erste Gruppe
+            if (previousDay !== '' || previousTime !== '') {
+                const separator = document.createElement('hr');
+                separator.classList.add('separator');
+                selectedSessionsList.appendChild(separator);
+            }
+
+            // Gruppierungstitel hinzufügen (Tag und Zeit)
+            const groupTitle = document.createElement('div');
+            groupTitle.classList.add('group-title');
+            groupTitle.innerHTML = `<strong>${session.day} - ${session.time}</strong>`;
+            selectedSessionsList.appendChild(groupTitle);
+
+            // Aktualisiere die vorherigen Werte
+            previousDay = session.day;
+            previousTime = session.time;
+        }
+
+        // Erstelle das Listenelement für die Session
         const li = document.createElement('li');
         li.innerHTML = `
             <strong>${session.title}</strong><br>
